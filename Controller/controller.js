@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 const getMostRecentFile = (req, res) => {
-    const directoryPath = __basedir + "/MyUploads/";
+    const directoryPath = __basedir + "/MyUploads2/";
   
     fs.readdir(directoryPath, function (err, files) {
       if (err) {
@@ -11,7 +11,7 @@ const getMostRecentFile = (req, res) => {
         });
       }
   
-    
+    //
     let mostRecentFile={'name':""};
     for(i=0;i<files.length;i++){
         mostRecentFile['name']=files[i];
