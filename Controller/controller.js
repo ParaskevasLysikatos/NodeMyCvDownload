@@ -2,7 +2,7 @@
 const fs = require("fs");
 
 const getMostRecentFile = (req, res) => {
-    const directoryPath = __basedir + "/MyUploads2/";
+    const directoryPath = __basedir + "/MyUploads/";
   
     fs.readdir(directoryPath, function (err, files) {
       if (err) {
